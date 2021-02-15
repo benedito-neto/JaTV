@@ -1,4 +1,4 @@
-package tech.init.jatv.producers;
+package com.agorasystems.jatv.producers;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;

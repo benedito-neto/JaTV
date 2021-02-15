@@ -1,4 +1,4 @@
-package tech.init.jatv.entities;
+package com.agorasystems.jatv.entities;
 
 import java.util.Calendar;
 

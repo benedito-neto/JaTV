@@ -1,4 +1,4 @@
-package tech.init.jatv.controllers;
+package com.agorasystems.jatv.controllers;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Path;

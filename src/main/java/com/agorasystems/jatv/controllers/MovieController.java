@@ -1,13 +1,14 @@
-package tech.init.jatv.controllers;
+package com.agorasystems.jatv.controllers;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
 
+import com.agorasystems.jatv.entities.Movie;
+import com.agorasystems.jatv.repositories.MovieRepository;
+
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.validator.Validator;
-import tech.init.jatv.entities.Movie;
-import tech.init.jatv.repositories.MovieRepository;
 
 @Controller
 public class MovieController {
@@ -29,7 +30,6 @@ public class MovieController {
 		this.result = result;
 	}
 
-	// TODO E necessario?
 	// @IncludeParameters
 	public void add(@Valid Movie movie) {
 		this.validator.onErrorRedirectTo(IndexController.class).index();

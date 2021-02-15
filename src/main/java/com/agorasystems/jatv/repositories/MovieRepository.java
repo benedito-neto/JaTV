@@ -1,4 +1,4 @@
-package tech.init.jatv.repositories;
+package com.agorasystems.jatv.repositories;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
-import tech.init.jatv.entities.Movie;
+import com.agorasystems.jatv.entities.Movie;
 
 @RequestScoped
 public class MovieRepository {
