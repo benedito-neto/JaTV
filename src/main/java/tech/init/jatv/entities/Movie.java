@@ -1,9 +1,12 @@
 package tech.init.jatv.entities;
 
+import java.util.Calendar;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -19,7 +22,14 @@ public class Movie {
 
 	private String tagline;
 
+	@Lob
 	private String overview;
+	
+	private Calendar subscription;
+	
+	public Movie() {
+		this.subscription = Calendar.getInstance();
+	}
 
 	public Long getId() {
 		return id;
@@ -51,6 +61,14 @@ public class Movie {
 
 	public void setOverview(String overview) {
 		this.overview = overview;
+	}
+
+	public Calendar getSubscription() {
+		return subscription;
+	}
+
+	public void setSubscription(Calendar subscription) {
+		this.subscription = subscription;
 	}
 
 }

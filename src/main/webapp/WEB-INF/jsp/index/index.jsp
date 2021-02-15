@@ -17,7 +17,7 @@
 		<div class="container">
 			<h1>Movie</h1>
 			
-			<form action="${linkTo[MovieController].add}" method="post">
+			<form id="movie-form" action="${linkTo[MovieController].add}" method="post">
 				<div class="form-group">
 					<label for="title">Title:</label>
 					<input id="title" name="movie.title" value="${movie.title}" class="form-control">

@@ -1,2 +1,2 @@
-# jatv
+# JaTV
 A small single application.
